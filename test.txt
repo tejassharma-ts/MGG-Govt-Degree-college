@@ -1,0 +1,248 @@
+  <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="buttons-sec">
+                            <ul>
+                                <li><a href="WorldClassEducation.aspx">World Class Education</a></li>
+                                <li><a href="MissionEmployability.aspx">Mission Employability</a></li>
+                                <li><a href="IncrediblePlacements.aspx">Incredible Placements</a></li>
+
+                                <li><a href="InternationalEdge.aspx">International Edge</a></li>
+                                <li><a href="InnovationIncubator.aspx">Innovation Incubator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                //usick facts 
+
+                 <section class="quick-facts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="heading">QUICK FACTS</h1>
+                        <h3>100+ TOP COMPANIES</h3>
+                        <img class="img-fluid" src="images/companies-quick-facts-2.jpg">
+
+                        <img class="img-fluid" src="images/counter.jpg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 col-sm-6 col-12">
+                        <div class="admissions">
+                            <h3>Admissions<br> 2024 </h3>
+                            <ul>
+                                <li><a href="Engineering.aspx">Engineering (B.Tech)</a></li>
+
+                                <li><a href="MastersInBusinessAdministration.aspx">MBA</a></li>
+                                <li><a href="PostGraduateDiplomaInBusinessManagement.aspx">PGDM</a></li>
+                                <li><a href="BachelorInBusinessAdministration.aspx">BBA</a></li>
+                                <li><a href="BachelorInComputerApplication.aspx">BCA</a></li>
+                                <li><a href="FashionDesign.aspx">Fashion & Design</a></li>
+                                <li><a href="BachelorsOfJournalismMassCommunication.aspx">BJMC</a></li>
+                                <li><a href="Polytechnic.aspx">Polytechnic</a></li>
+                                <li><a href="Education.aspx">Education</a></li>
+                                <li><a href="Education.aspx">B.Com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-sm-6 col-12 form-sec">
+                        <div>
+                            <div class="form-group">
+                                <label for="exampleInputFullName"><b>Full Name</b> <span>*</span></label>
+                                <input type="text" class="form-control" id="exampleInputFullName"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPhone1"><b>Mobile</b> <span>*</span></label>
+                                <input type="text" class="form-control" id="exampleInputPhone1"
+                                    aria-describedby="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"><b>Email</b> <span>*</span></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1"><b>Course</b></label>
+                                <select id="ddlHomePageCourseP" class="form-control">
+                                    <option value="0">Select Course*</option>
+                                </select>
+                            </div>
+                            <input type="button" onclick="SubmitQuery2()" class="btn btn-secondary" value="Submit" />
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 col-sm-12 col-12">
+                        <div id="testimonial-slider" class="owl-carousel">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        ///label
+         <section class="EventUpdateBG">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="EventUpdate">
+                            <a href="Files/National Conference on Metaverse, Fashion Design & Sustainable Fashion_ VIFT (1).pdf"
+                                target="_blank">
+                                <b>National Conference</b> "Metaverse, Fashion Design & Sustainable Fashion" on
+                                <b>3rd &
+                                    4th November 2023</b>- (Hybrid Mode)
+                            </a>
+                            <a class="btn btn-danger" href="https://forms.gle/wv2HiA23XyHzMhpj8" target="_blank">Click
+                                Here for Registration <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        //wings
+           <section class="penting">
+            <div class="container">
+                <div class="row fashion">
+                    <div class="col-md-6 col-lg-4 col-sm-12 col-12">
+                        <div class="wings">
+                            <h3>Give Wings to Your Imagination with our Fashion & Fine Arts Courses.</h3>
+                            <p>Let Loose your creativity with our rigorous, comprehensive and cutting edge Programs
+                                in
+                                Fashion And Art & Design. A well planned practicable curriculum in which you master
+                                the
+                                essential skills for a bright career in design
+                                and allied industry.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12 col-12">
+                        <div class="white">
+                            <h4>FASHION DESIGN</h4>
+                            <p>Our Fashion programs with internship is tailored to rack up Fashionistas and Trend
+                                Setters who will be widely recognized, actively sought, and well paid for their
+                                creative
+                                and impeccable quality designs.</p>
+                            <a href="FashionDesign.aspx" class="btn btn-danger"><i class="fa fa-adjust"
+                                    aria-hidden="true"></i>VIEW ALL PROGRAMS</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12 col-12">
+                        <div class="white">
+                            <h4>ART & DESIGN</h4>
+                            <p>Our Art & Design program is geared to produce illustrators, advertisers, and graphic
+                                designers with highly coveted skills and talents that can render the impossible
+                                imaginations into a masterpiece.</p>
+                            <a href="FashionDesign.aspx" class="btn btn-danger"><i class="fa fa-adjust"
+                                    aria-hidden="true"></i>VIEW ALL PROGRAMS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGGGDC Overview</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <?php include('include/header.php')?>
+   
+ <div class="container">
+        <div class="row">
+            <img src="images/Mahayogi Guru Gorakhnath Govt/card/overview.png" alt="">
+        </div>
+        <div class="innH-Head">
+            <br>
+            <ol class="breadcrumb" style="display:none;">
+                <li><a href="/">Home </a></li>
+                <li></li>
+            </ol>
+        </div>
+        <div class="innH-Content">
+
+            <p></p>
+            <h4 class="mb-2">
+                <em><strong>Overview &amp; Identify&nbsp;</strong></em>
+            </h4>
+            <p>
+                यमकेश्वर विधानसभा क्षेत्र के अन्तर्गत कोटद्वार से ऋषिकेश के मध्य उच्च शिक्षा का कोई माध्यम न होने के
+                कारण यह महसूस किया गया कि यमकेश्वर ब्लाक के ग्राम बिथ्याणी (यमकेश्वर) जो कि कोटद्वार एवम् ऋषिकेश से
+                70-70 किमी0 के मध्य स्थित है, में उच्च शिक्षा के लिए एक महाविद्यालय की स्थापना की जाये। यमकेश्वर,
+                दुगड्डा तथा द्वारीखाल विकास क्षेत्र का मिलानी क्षेत्र के छात्र/छात्राओं खासतौर से कम सम्पन्न परिवार के
+                बालक एवं बालिकायें उच्च शिक्षा से वंचित रहते आये थे और धनाभाव एवं साधनाभाव के कारण काफी छात्र/छात्रायें
+                उच्च शिक्षा प्राप्त नहीं कर पाते थे। इस महाविद्यालय की प्रेरणा श्री गोरक्षनाथ मंदिर गोरखपुर (उत्तर
+                प्रदेश) परम पूज्य गोरक्षापीठाधीश्वर महंत अवैद्यनाथ जी महाराज (वर्तमान में ब्रह्मलीन) एवं उनके सुयोग्य
+                उत्तराधिकारी महंत श्रीयुत योगी आदित्यनाथ जी सांसद गोरखपुर (वर्तमान मुख्यमंत्री उत्तर प्रदेश) ने दी और
+                महाविद्यालय संचालन के लिए शिक्षा समिति के गठन, पंजीकरण एवं भूमि की व्यवस्था करने के लिए आवश्यक मार्ग
+                निर्देशन दिया।
+
+                उक्त निर्देशन प्राप्त होने पर महायोगी गुरू गोरखनाथ शिक्षा समिति बिथ्याणी (यमकेश्वर) पौड़ी गढ़वाल का गठन
+                वर्ष 1998 में किया गया तथा सोसाइटी का पंजीकरण दिसम्बर 1998 में सम्पन्न हुआ। शिक्षा समिति ने फिर भूमि की
+                व्यवस्था पर विचार किया जिसमें ग्राम बिथ्याणी, मुंजरा, मलेथा एवं उमरोली के भूमि दाताओं से भूमि दान करने
+                की अपील की गयी। उक्त सम्मानित भूमि दान दाताओं ने भूमि दान देने में बढ़ चढ़ कर हिस्सा लिया और वर्ष 1999
+                अक्टूबर में चार दिन में ही 165 नाली भूमि का शिक्षा समिति के नाम पर पंजीकरण हो गया। भूमि पंजीकरण हेतु परम
+                पूज्य महंत जी एवं क्षेत्र के दानदाताओं ने भी अपने-अपने सामर्थ्य के अनुसार दान दिया।</p>
+            <h4 style="margin: 32px 0px;">
+                <em><strong>Why Choose MGGGDC ?</strong></em>
+            </h4>
+            <div>
+                &nbsp;</div>
+            <div class="lcut0998">
+                <ul class="list-yy">
+                    <li>
+                        50+ faculties teaching staff</li>
+                    <li>
+                    We bridge the gap in higher education accessibility by establishing a college in the Yamkeshwar block, strategically located between Kotdwar and Rishikesh.</li>
+                    <li>
+                    The establishment of our institution has been spearheaded by revered figures like Param Pujya Mahant Avaidyanath Ji Maharaj and his successor, Mahant Shri Yogi Adityanath Ji, who have shown exemplary leadership and commitment to education.</li>
+                    <li>
+                    Our institution upholds values of integrity, inclusivity, and dedication to learning. We strive to create an environment that fosters academic excellence, personal growth, and ethical leadership among our students.</li>
+                    <li>
+                    Since our inception in 1998, we have made significant progress, with swift registration and land acquisition processes showcasing our efficiency and dedication to our mission.</li>
+                    <li>
+                        National collaborations to provide global exposure.</li>
+                </ul>
+            </div>
+            <p>
+                &nbsp;</p>
+            <p></p>
+        </div>
+    </div>
+    <?php include('include/footer.php')?>
+</body>
+
+</html>
+
+
+
+<ul>
+                                                <li><a href="#">Career & Counselling Cell Committee</a></li>
+                                                <li><a href="#">Parent Teacher Association Committee</a>
+                                                </li>
+                                                <li><a href="#"> Women Cell Committee</a></li>
+                                                <li><a href="#">Scholarship Committee </a></li>
+                                                <li><a href="#"> Anti-drug Committee</a></li>
+                                                <li><a href="#"> Admission Committee </a></li>
+                                                <li><a href="#"> Cultural Committee</a></li>
+                                            </ul>
