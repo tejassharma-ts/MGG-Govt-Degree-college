@@ -4,12 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MGGGDC Overview</title>
+    <title> Mahayogi Guru Gorakhnath Govt. degree college bithyani Yamkeshwar, pauri garhwal Uttarakhnd</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <?php include('include/header.php')?>
+    <section class="wow fadeIn pre-header222 animated" style="visibility: visible; animation-name: fadeIn;">
+        <div class="container">
+            <div class="row">
+                <div class="page-title-wrap2 text-center w-100">
+                    <h1 class="page-title-captions2"><b>Mission</b> </h1>
+                    <div class="breadcrumbs2">
+                        <ul>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="index.php">/</a></li>
+                            <li><a href="mission.php">Mission</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="business">
         <div class="container">
             <div class="row d-flex justify-content-space-between" style="justify-content: space-between;">

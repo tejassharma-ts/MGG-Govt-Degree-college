@@ -146,16 +146,16 @@
                             <ul>
                                 <li><a href="index.php" target="_blank">Home</a></li>
                                 <li>|</li>
-                                <li><a href="#" target="_blank">Alumni</a></li>
+                                <li><a href="MGGGDC Overview.php" target="_blank">About us</a></li>
                                 <li>|</li>
-                                <li><a href="#" target="_blank">Careers</a></li>
+                                <li><a href="contact.php" target="_blank">Contact</a></li>
                                 <li>|</li>
-                                <li><a href="#" target="_blank">Contact</a></li>
-                                <li>|</li>
-                                <li><a href="#" target="_blank">Apply
-                                        Online</a>
+                                <li><a href="http://ukadmission.samarth.ac.in">Apply
+                                            Online</a>
                                 </li>
                                 <li>|</li>
+                                <li><button class="btn btn-danger">Download bruchure</button>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -240,17 +240,14 @@
                                 <ul>
                                     <li><a href="commitee.php">Our Committee </a>
                                     </li>
-
-                                    <li><a href="Admission Procedure.php">Admission Procedure</a></li>
-                                    <li><a href="#">Rules & Regulations</a></li>
-                                    <li><a href="#">Apply
-                                            Online</a></li>
+                                    <li><a href="http://ukadmission.samarth.ac.in">ApplyOnline</a></li>
+                                    <li><a href="Library.php">Library</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">NAAC & IQAC</a>
                             </li>
-                            <li><a href="#">Gallery</a>
-                            <li><a href="">Contact Us</a></li>
+                            <li><a href="Gallery.php">Gallery</a>
+                            <li><a href="contact.php">Contact Us</a></li>
 
                             </ul>
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MGGGDC Overview</title>
+    <title> Mahayogi Guru Gorakhnath Govt. degree college bithyani Yamkeshwar, pauri garhwal Uttarakhnd</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 

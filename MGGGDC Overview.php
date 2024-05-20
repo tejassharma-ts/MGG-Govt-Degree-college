@@ -4,12 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MGGGDC Overview</title>
+    <title> Mahayogi Guru Gorakhnath Govt. degree college bithyani Yamkeshwar, pauri garhwal Uttarakhnd</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <?php include('include/header.php')?>
+    <section class="wow fadeIn pre-header222 animated" style="visibility: visible; animation-name: fadeIn;">
+        <div class="container">
+            <div class="row">
+                <div class="page-title-wrap2 text-center w-100">
+                    <h1 class="page-title-captions2"><b>MGGGDC Overview</b> </h1>
+                    <div class="breadcrumbs2">
+                        <ul>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="index.php">/</a></li>
+                            <li><a href="MGGGDC Overview.php">MGGGDC Overview</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="org_college_pic">
         <div class="org_all">
             <img src="images/Mahayogi Guru Gorakhnath Govt/card/card1.png" alt="" class="org_all_image">
@@ -28,7 +44,7 @@
                     <em><strong>Overview &amp; Identify&nbsp;</strong></em>
                     <hr style="background-color: red;" class="mb-3">
                 </h4>
-                <p class="mb-4" style="text-align: center;"> यमकेश्वर विधानसभा क्षेत्र के अन्तर्गत कोटद्वार से ऋषिकेश के
+                <p class="mb-4" > यमकेश्वर विधानसभा क्षेत्र के अन्तर्गत कोटद्वार से ऋषिकेश के
                     मध्य उच्च शिक्षा का कोई माध्यम न होने के
                     कारण यह महसूस किया गया कि यमकेश्वर ब्लाक के ग्राम बिथ्याणी (यमकेश्वर) जो कि कोटद्वार एवम् ऋषिकेश से
                     70-70 किमी0 के मध्य स्थित है, में उच्च शिक्षा के लिए एक महाविद्यालय की स्थापना की जाये। यमकेश्वर,

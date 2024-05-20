@@ -4,21 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MGGGDC Overview</title>
+    <title> Mahayogi Guru Gorakhnath Govt. degree college bithyani Yamkeshwar, pauri garhwal Uttarakhnd</title>
     <link rel="stylesheet" href="css/main.css">
     <style>
         <style>table {
             border-collapse: collapse;
             width: 100%;
         }
-
         th,
         td {
             border: 1px solid black;
             padding: 8px;
             text-align: left;
         }
-
         th {
             background-color: #f2f2f2;
         }
@@ -28,6 +26,22 @@
 
 <body>
     <?php include('include/header.php')?>
+    <section class="wow fadeIn pre-header222 animated" style="visibility: visible; animation-name: fadeIn;">
+        <div class="container">
+            <div class="row">
+                <div class="page-title-wrap2 text-center w-100">
+                    <h1 class="page-title-captions2"><b>Our Program</b> </h1>
+                    <div class="breadcrumbs2">
+                        <ul>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="index.php">/</a></li>
+                            <li><a href="program.php">Our Program</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="engineer mt-5 mb-5">
         <div class="container">
             <div class="row">
@@ -141,9 +155,39 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="images/Mahayogi Guru Gorakhnath Govt/card/BA 3.png" alt="" class="w-100 rounded-3" >
-                    <h5 class="text-center"><b>𓂃🖊Faculty of Bachelor of Arts (BA) Program</b></h5>
-                </div>
+                <ul class="mb-4">
+                    <li>
+                        <p><b><span class="material-symbols-outlined hcc">
+                                    keyboard_double_arrow_right
+                                </span>Application form Submission :</b> Begin by filling out our online application
+                            form.
+                            Provide accurate information and ensure all required documents are attached.</p>
+                    </li>
+                    <li>
+                        <p><b><span class="material-symbols-outlined hcc">
+                                    keyboard_double_arrow_right
+                                </span>Entrance Examination (if applicable) : </b> Some programs may require you to
+                            take an
+                            entrance examination to assess your academic proficiency and suitability for the course.</p>
+                    </li>
+                    <li>
+                        <p><b><span class="material-symbols-outlined hcc">
+                                    keyboard_double_arrow_right
+                                </span>Admission Decision : </b>After careful consideration of your application,
+                            examination
+                            (if applicable), and interview (if applicable), we will inform you of our admission
+                            decision. </p>
+                    </li>
+                    <li>
+                        <p><b> <span class="material-symbols-outlined hcc">
+                                    keyboard_double_arrow_right
+                                </span>Enrollment :</b> Upon receiving your admission offer, you will be required to
+                            confirm
+                            your acceptance and complete the enrollment process by paying the necessary fees within
+                            the stipulated timeframe.</p>
+                    </li>
+                </ul>
+            </div>
             </div>
 
         </div>

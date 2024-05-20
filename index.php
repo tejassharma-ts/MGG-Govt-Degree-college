@@ -37,17 +37,17 @@
     <!-- photo slider -->
     <div id="home-slider" class="owl-carousel">
         <div class="slide-pic">
-            <img src="images/Mahayogi Guru Gorakhnath Govt/slider/1.jpg">
+            <img src="images/Mahayogi Guru Gorakhnath Govt/slider/1.png">
         </div>
         <div class="slide-pic">
-            <img src="images/Mahayogi Guru Gorakhnath Govt/slider/2.jpg">
+            <img src="images/Mahayogi Guru Gorakhnath Govt/slider/2.png">
         </div>
         <div class="slide-pic">
-            <img src="images/Mahayogi Guru Gorakhnath Govt/slider/3.jpg">
+            <img src="images/Mahayogi Guru Gorakhnath Govt/slider/3.png">
         </div>
     </div>
     <!-- News -->
-    <div class="" style="background-color: #333333;">
+    <div class="htp">
         <!--start code-->
         <div class="row" style="width: 98%;">
             <div class="col-1 col-md-3 col-lg-2 py-1 pr-md-0 mb-md-1">
@@ -137,15 +137,13 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4 col-sm-12 col-12">
                     <div class="career">
-                        <h4>HEMVATI NANDAN BAHUGUNA GARHWAL UNIVERSITY
+                        <h4 class="text-uppercase">Mahayogi Guru Gorakhnath Govt. degree college
                         </h4>
                         <div class="d-flex justify-content-center">
                             <img class="img-fluid ca-images "
-                                src="images/Mahayogi Guru Gorakhnath Govt/HNBG-new-logo.png" style="width: 50%;">
+                                src="images/Mahayogi Guru Gorakhnath Govt/logo2.jpg" style="width: 50%;">
                         </div>
-                        <p>Hemvati Nandan Bahuguna Garhwal University named after the Late Sri Hemvati Nandan
-                            Bahuguna, was established in 1973 after a mass movement launched to fulfill higher
-                            education needs of this remote and geographically difficult region.
+                        <p>Mahayogi Guru Gorakhnath Education Committee was formed in 1998, with society registration completed that same year. Through appeals to land donors in Bithyani, Munjara, Maletha, and Umroli, the committee successfully registered 165 acres of land in 1999.Established to bridge the gap in higher education facilities between Kotdwar and Rishikesh within the Yamkeshwar Vidhan Sabha constituency
                         </p>
                         <a href="" class="text-danger">see more ..</a>
                     </div>
@@ -159,9 +157,8 @@
                                 src="images/Mahayogi Guru Gorakhnath Govt/Sri_Dev_Suman_Uttarakhand_University_Logo.png"
                                 style="width: 51%;">
                         </div>
-                        <p>Affiliated to & Sri Dev Suman Uttarakhand University is a State university situated at
-                            Badshahithaul in Tehri Garhwal district of north Indian state of Uttarakhand, India. It
-                            was established by the Government of Uttarakhand through Pt. Deen Dayal Upadhyay.</p>
+                        <p>Affiliated to Sri Dev Suman Uttarakhand University Badshahi Thaul is situated on the way between Chamba and New Tehri at a distance of 3 km from Chamba, one of the brightest spots of district Tehri Garhwal, at an elevation of 1676 m from sea level. This town, situated on Delhi-Gangotri national highway, offers one of the most spectacular view of snow capped.
+</p>
                         <a href="" class="text-danger">see more ..</a>
                     </div>
                 </div>
@@ -191,20 +188,24 @@
                                 <marquee direction="up" scrollamount="5" onmouseover="this.stop();"
                                     onmouseout="this.start();" ;="" style="height: 371px;">
                                     <ul class="margin-t-b">
-                                        <li> <i class="fa-solid fa-location-dot hns mtt"
-                                                style="color: #FFD43B;"></i>Reminder Circular No. 436 (Submission of
-                                            Annual Performance Appraisal Report) - reg. </li>
-                                        <li> <i class="fa-solid fa-location-dot hns mtt"
-                                                style="color: #FFD43B;"></i>Publishing Incorrect Map of India is
-                                            Punishable - regarding</li>
+                                        <li> <img class="padding-none border-none yy"
+                                                src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11"
+                                                width="26"><a href="" class="a-tag">Reminder Circular No. 436 (Submission of
+                                            Annual Performance Appraisal Report) - reg.</a> </li>
+                                        <li> <img class="padding-none border-none yy"
+                                                src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11"
+                                                width="26"><a href="" class="a-tag">Publishing Incorrect Map of India is
+                                            Punishable - regarding</a></li>
                                         <li>
-                                            <i class="fa-solid fa-location-dot hns mtt" style="color: #FFD43B;">
-                                            </i>Notification for P.G. Entrance Exam 2024-25 Reg.
+                                            <img class="padding-none border-none yy"
+                                                src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11"
+                                                width="26"><a href="" class="a-tag">Notification for P.G. Entrance Exam 2024-25 Reg.</a>
                                         </li>
-                                        <li> <i class="fa-solid fa-location-dot hns mtt"
-                                                style="color: #FFD43B;"></i>Office
+                                        <li> <img class="padding-none border-none yy"
+                                                src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11"
+                                                width="26"><a href="" class="a-tag">Office
                                             Order No. 147 (Committee Constitute for 'Institution's Innovation
-                                            Council)-reg.</li>
+                                            Council)-reg.</a></li>
 
                                     </ul>
                                 </marquee>
