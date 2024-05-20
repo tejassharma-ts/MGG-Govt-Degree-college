@@ -26,6 +26,7 @@
             </div>
         </div>
     </section>
+
     <section class="business">
         <div class="container">
             <div class="row d-flex justify-content-space-between" style="justify-content: space-between;">
@@ -62,109 +63,124 @@
     <section class="business">
         <div class="container">
             <div class="row d-flex justify-content-space-between" style="justify-content: space-between;">
-                <div class="col-md-12 col-lg-11 col-sm-12 col-12">
-                    <h3><b>Career & Counselling Cell Committee </b></h3>
+                <div class="col-md-12 col-lg-4 col-sm-12 col-12">
+                    <h3><b>Rules and regulations –</b></h3>
                     <hr style="background-color: red;" class="mt-0 mb-3">
-                    <p>The Career & Counselling Cell Committee serves as a pivotal support system within our educational
-                        institution, dedicated to guiding and empowering students as they navigate their academic and
-                        professional journeys. Established with a vision to provide comprehensive guidance and support,
-                        our committee comprises experienced educators, counselors, and industry professionals committed
-                        to fostering the holistic development of students.</p>
-                    <br>
-                    <p>At the heart of our mission is the belief that every student possesses unique talents,
-                        aspirations, and potential, and it is our responsibility to help them unlock these qualities to
-                        shape fulfilling and successful careers. Through a range of initiatives and services, we aim to
-                        equip students with the skills, knowledge, and resources necessary to make informed decisions
-                        about their academic and professional paths.</p>
+                    <p>Rules and regulations are structured guidelines established by authorities to ensure order,
+                        safety, and fairness within a society or organization. They serve as a framework for acceptable
+                        behavior and actions, helping to maintain harmony and prevent conflicts. </p>
+                    <ul class="mt-3">
+                        <li>📌<b>Dr. Neeraj nautiyal – in charge</b></li>
+                        <li>📌<b>Manendra singh bisht – Member</b></li>
+                        <li>📌<b>Kamlesh Kumar – Member</b></li>
+                        <li>📌<b>Bhagat singh – member</b></li>
+                    </ul>
 
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="business mt-0">
-        <div class="container">
-            <div class="row d-flex justify-content-space-between" style="justify-content: space-between;">
-                <div class="col-md-12 col-lg-11 col-sm-12 col-12">
-                    <h3><b>Parent Teacher Association Committee </b></h3>
+                <div class="col-md-12 col-lg-4 col-sm-12 col-12">
+                    <h3><b>Cultural committee</b></h3>
                     <hr style="background-color: red;" class="mt-0 mb-3">
-                    <p>The Parent-Teacher Association (PTA) Committee plays a vital role in fostering collaboration and
-                        communication between parents, teachers, and the school administration, with the ultimate goal
-                        of enhancing the educational experience and well-being of students.</p>
-                    <br>
-                    <p>Comprised of dedicated parents, teachers, and school administrators, the PTA Committee serves as
-                        a platform for constructive dialogue and partnership. Our committee is committed to creating a
-                        supportive and inclusive environment where the voices of all stakeholders are heard and valued.
-
-                        One of our primary objectives is to facilitate effective communication between parents and
-                        teachers, ensuring that important information regarding academic progress, school events, and
-                        initiatives is shared transparently and promptly. Through regular meetings, newsletters, and
-                        digital platforms, we strive to keep parents informed and engaged in their child's education
-                        journey.</p>
-
+                    <p>A cultural committee plays a pivotal role in fostering and promoting cultural activities within a
+                        community or organization. It serves as a vibrant hub for planning, coordinating, and executing
+                        a variety of events that celebrate and preserve the rich tapestry of cultural heritage. </p>
+                    <ul class="mt-3">
+                        <li>📌<b>Dr. Neeraj nautiyal – in charge</b></li>
+                        <li>📌<b>Pooja Rani – member</b></li>
+                        <li>📌<b>Poonam – member</b></li>
+                        <li>📌<b>Seema – member</b></li>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="business mt-0">
-        <div class="container">
-            <div class="row d-flex justify-content-space-between" style="justify-content: space-between;">
-                <div class="col-md-12 col-lg-11 col-sm-12 col-12">
+                <div class="col-md-12 col-lg-4 col-sm-12 col-12">
                     <h3><b>Women Cell Committee </b></h3>
                     <hr style="background-color: red;" class="mt-0 mb-3">
                     <p>The Women Cell Committee serves as a cornerstone of support and advocacy for women within our
                         institution, promoting gender equality, empowerment, and inclusivity. Comprising dedicated
-                        members from diverse backgrounds, our committee is committed to creating a safe, respectful, and
-                        inclusive environment where women can thrive academically, professionally, and personally.</p>
-                    <br>
-                    <p>At the heart of our mission is the belief in the inherent value and potential of every woman. We
-                        are dedicated to fostering a culture of respect, dignity, and equality, free from
-                        discrimination, harassment, and bias. Our committee works tirelessly to raise awareness about
-                        gender issues, promote gender sensitization, and challenge stereotypes and societal norms that
-                        perpetuate inequality.</p>
+                        members from diverse backgrounds.</p>
+                    <ul class="mt-3">
+                        <li>📌<b>Vinay Kumar pandey – In charge</b></li>
+                        <li>📌<b>Pooja rani – member</b></li>
+                        <li>📌<b>Seema devi – member</b></li>
+                        <li>📌<b>Poonam – member</b></li>
+                    </ul>
+
+
                 </div>
             </div>
         </div>
     </section>
+
+
     <section class="business mt-0">
         <div class="container">
             <div class="row d-flex justify-content-space-between" style="justify-content: space-between;">
-                <div class="col-md-12 col-lg-11 col-sm-12 col-12">
+                <div class="col-md-12 col-lg-4 col-sm-12 col-12">
                     <h3><b>Scholarship Committee </b></h3>
                     <hr style="background-color: red;" class="mt-0 mb-3">
-                    <p>The Scholarship Committee serves as a vital resource within our institution, dedicated to
+                    <p>he Scholarship Committee serves as a vital resource within our institution, dedicated to
                         supporting students in their pursuit of academic excellence and personal development. Comprised
-                        of educators, administrators, and community members, our committee is committed to ensuring
-                        equitable access to educational opportunities and financial assistance for deserving students.
-
-                        At the core of our mission is the belief that every student deserves the chance to fulfill their
-                        academic potential, regardless of financial constraints. Our committee works diligently to
-                        identify and award scholarships to students based on merit, financial need, and other criteria,
-                        ensuring that talented individuals have the support they need to pursue their educational goals.
+                        of educators, administrators, and community members, this committee works tirelessly to
+                        identify, evaluate, and award scholarships to deserving students.
                     </p>
+                    <ul class="mt-3">
+                        <li>📌<b>Vinay kumar pandy – in charge</b></li>
+                        <li>📌<b>Dr. Neeraj nautiyal - member</b></li>
+                        <li>📌<b>Sanjay Kumar –member</b></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 col-lg-4 col-sm-12 col-12">
+                    <h3><b>Anti-ragging Committee </b></h3>
+                    <hr style="background-color: red;" class="mt-0 mb-3">
+                    <p>An Anti-Ragging Committee is a dedicated body typically established within educational
+                        institutions to prevent and address incidents of ragging, which refers to the act of hazing or
+                        bullying new students. The committee is composed of faculty members, administrative staff, and
+                        sometimes students.</p>
+                    <ul class="mt-3">
+                        <li>📌<b>Mrs Pooja Rani – In charge</b></li>
+                        <li>📌<b>Sunil Prasad – Member</b></li>
+                        <li>📌<b>Neeraj Nautiyal – Member</b></li>
+                        <li>📌<b>Seema Devi – member</b></li>
+
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-md-12 col-lg-4 col-sm-12 col-12">
+                    <h3><b>Career & Counselling Cell </b></h3>
+                    <hr style="background-color: red;" class="mt-0 mb-3">
+                    <p>
+                        The Career & Counselling Cell Committee serves as a pivotal support system within our
+                        educational institution, dedicated to guiding and empowering students as they navigate their
+                        academic and professional journeys. This committee offers a wide range of services, including
+                        career counseling</p>
+                    <ul class="mt-3">
+                        <li>📌<b>Ram Singh Samant – In charge</b></li>
+                        <li>📌<b>Vinay Kumar Pandey – Member</b></li>
+                        <li>📌<b>Dr. Neeraj Nautiyal – Member</b></li>
+                    </ul>
+
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <section class="business mt-0">
         <div class="container">
             <div class="row d-flex justify-content-space-between" style="justify-content: space-between;">
-                <div class="col-md-12 col-lg-11 col-sm-12 col-12">
-                    <h3><b>Anti-drug Committee </b></h3>
+                <div class="col-md-12 col-lg-4 col-sm-12 col-12">
+                    <h3><b>Admission committee </b></h3>
                     <hr style="background-color: red;" class="mt-0 mb-3">
-                    <p>The Anti-drug Committee plays a pivotal role in our institution's commitment to promoting a safe,
-                        healthy, and drug-free environment for students, faculty, and staff. Comprising members from
-                        various sectors including faculty, administration, counseling services, and student
-                        representatives, our committee is dedicated to raising awareness, preventing substance abuse,
-                        and providing support to those affected by drug-related issues.</p>
-                    <br>
-                    <p>At the core of our mission is the recognition of the detrimental impact of drug abuse on
-                        individuals, families, and communities. We are committed to addressing the root causes of
-                        substance abuse and creating a supportive environment that empowers individuals to make positive
-                        choices for their well-being..</p>
-
+                    <p>The admission committee plays a pivotal role in shaping the future of educational institutions by
+                        carefully evaluating prospective students' applications. This committee comprises dedicated
+                        professionals who meticulously review each applicant's academic achievements, extracurricular
+                        activities, personal statements, and recommendation letters.
+                    </p>
+                    <ul class="mt-3">
+                        <li>📌<b>Dr. Umesh tyagi – in charge</b></li>
+                        <li>📌<b>Dr. ramsingh samant – member</b></li>
+                        <li>📌<b>Poonam – member</b></li>
+                        <li>📌<b>Sunil rawat – member</b></li>
+                    </ul>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <?php include('include/footer.php')?>

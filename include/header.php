@@ -242,6 +242,7 @@
                                     </li>
                                     <li><a href="http://ukadmission.samarth.ac.in">ApplyOnline</a></li>
                                     <li><a href="Library.php">Library</a></li>
+                                    <li><a href="calender.php">calender</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">NAAC & IQAC</a>
