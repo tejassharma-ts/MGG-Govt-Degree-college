@@ -247,7 +247,7 @@
                             </li>
                             <li><a href="#">NAAC & IQAC</a>
                             </li>
-                            <li><a href="Gallery.php">Gallery</a>
+                            <li><a href="gallery.php">Gallery</a>
                             <li><a href="contact.php">Contact Us</a></li>
 
                             </ul>

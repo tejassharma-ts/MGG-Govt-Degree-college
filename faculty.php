@@ -1,3 +1,6 @@
+<?php
+include "./admin/config/connection.php"
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -93,62 +96,29 @@
                     <div class="container-fluid ">
                         <h3>📓TEACHING STAFF :- Guiding Minds, Igniting Futures</h3>
                         <div class="d-flex justify-content-center flex-wrap">
+                            <?php 
+                            $query = "SELECT * FROM faculty_members order by id desc";
+                            $rs_result = mysqli_query($con, $query);
+
+                            while ($row = mysqli_fetch_array($rs_result)) {
+                                $id = $row['id'];
+                                $name = $row['name'];
+                                $photo = $row['photo'];
+                                $position = $row['position'];
+                                $cv_path = $row['cv_path'];
+
+                             $photoSrc = !empty($photo) ? "./admin/$photo" : "./admin/upload/teachers/default.jpg";
+                            ?>
                             <div class="card m-2 custom-card" style="width: 13rem;">
-                                <img src="images/Mahayogi Guru Gorakhnath Govt/card/person.png"
-                                    class="card-img-top mb-0 custom-card-img" alt="...">
+                                <img style="aspect-ratio: 2/2; object-fit: cover;" src="<?php echo $photoSrc ?>"
+                                class="card-img-top mb-0 custom-card-img" alt="...">
                                 <div class="card-body p-1">
-                                    <h3 class="card-text"><b>Rakesh Gupta</b></h3>
+                                    <h3 class="card-text"><b><?php echo $name?></b></h3>
                                 </div>
                             </div>
-                            <div class="card m-2 custom-card" style="width: 13rem;">
-                                <img src="images/Mahayogi Guru Gorakhnath Govt/card/person.png"
-                                    class="card-img-top mb-0 custom-card-img" alt="...">
-                                <div class="card-body p-1">
-                                    <h3 class="card-text"><b>Rakesh Gupta</b></h3>
-                                </div>
-                            </div>
-                            <div class="card m-2 custom-card" style="width: 13rem;">
-                                <img src="images/Mahayogi Guru Gorakhnath Govt/card/person.png"
-                                    class="card-img-top mb-0 custom-card-img" alt="...">
-                                <div class="card-body p-1">
-                                    <h3 class="card-text"><b>Rakesh Gupta</b></h3>
-                                </div>
-                            </div>
-                            <div class="card m-2 custom-card" style="width: 13rem;">
-                                <img src="images/Mahayogi Guru Gorakhnath Govt/card/person.png"
-                                    class="card-img-top mb-0 custom-card-img" alt="...">
-                                <div class="card-body p-1">
-                                    <h3 class="card-text"><b>Rakesh Gupta</b></h3>
-                                </div>
-                            </div>
-                            <div class="card m-2 custom-card" style="width: 13rem;">
-                                <img src="images/Mahayogi Guru Gorakhnath Govt/card/person.png"
-                                    class="card-img-top mb-0 custom-card-img" alt="...">
-                                <div class="card-body p-1">
-                                    <h3 class="card-text"><b>Rakesh Gupta</b></h3>
-                                </div>
-                            </div>
-                            <div class="card m-2 custom-card" style="width: 13rem;">
-                                <img src="images/Mahayogi Guru Gorakhnath Govt/card/person.png"
-                                    class="card-img-top mb-0 custom-card-img" alt="...">
-                                <div class="card-body p-1">
-                                    <h3 class="card-text"><b>Rakesh Gupta</b></h3>
-                                </div>
-                            </div>
-                            <div class="card m-2 custom-card" style="width: 13rem;">
-                                <img src="images/Mahayogi Guru Gorakhnath Govt/card/person.png"
-                                    class="card-img-top mb-0 custom-card-img" alt="...">
-                                <div class="card-body p-1">
-                                    <h3 class="card-text"><b>Rakesh Gupta</b></h3>
-                                </div>
-                            </div>
-                            <div class="card m-2 custom-card" style="width: 13rem;">
-                                <img src="images/Mahayogi Guru Gorakhnath Govt/card/person.png"
-                                    class="card-img-top mb-0 custom-card-img" alt="...">
-                                <div class="card-body p-1">
-                                    <h3 class="card-text"><b>Rakesh Gupta</b></h3>
-                                </div>
-                            </div>
+                            <?php
+                            }
+                            ?>
                         </div>
                     </div>
                 </section>
