@@ -5,7 +5,7 @@ error_reporting(0);
 if (!$_SESSION['u']) {
 	header('location:login.php');
 }
-include("config/connection.php");
+include "./config/connection.php";
 ?>
 <?php include_once("include1/sidenav.php"); ?>
 <div class="page-wrapper">
@@ -17,7 +17,6 @@ include("config/connection.php");
 					<h2 class="font-weight-bold text-center">
 						<font color="#146C94">&nbsp; View News</font>
 					</h2>
-					<h6 class="fw-bold">InternshipTime</h6>
 				</div>
 					<div class="table table-responsive">
 						<table class="table table-bordered table-hover" width="100%">
@@ -25,8 +24,7 @@ include("config/connection.php");
 								<tr>
 									<th>ID</th>
 									<th>News title</th>
-									<th>News Description</th>
-									<th>Image</th>
+									<th>New pdf</th>
 									<th>
 										<center>Action</center>
 									</th>
@@ -98,27 +96,21 @@ include("config/connection.php");
 
 							/////////// Now let us print the table headers ////////////////
 
-							$query = "SELECT * FROM news_tb order by id desc limit $eu, $limit ";
+							$query = "SELECT * FROM news order by id desc limit $eu, $limit ";
 							$rs_result = mysqli_query($con, $query);
 							$i = 1;
 							$j = 1;
 							while ($row = mysqli_fetch_array($rs_result)) {
 								$id = $row['id'];
 								$title = $row['title'];
-								$desc = $row['description'];
-								$img = $row['img'];
+								$path = $row['pdf_path'];
 							?>
 								<tbody>
 									<tr>
 
 										<td><?php echo $i; ?></td>
 										<td><?php echo $title; ?></td>
-										<td><?php echo $desc; ?></td>
-
-										<td>
-											<img src="upload/<?php echo $img; ?>" height="100px" width="100px">
-										</td>
-
+										<td><?php echo $pdf_path; ?></td>
 										<td width="100">
 											<center>
 												<a class="text-decoration-none" onclick="return confirm('Are you sure you want to remove this Form ?')" href="view_news.php?del=<?php echo $id; ?>"> <img src="img/delete.png" width="15"> </a> | <a style="font-size:13px;padding:3px 3px;background:#1a8646;color:#fff;" href="edit_news.php?id=<?php echo $id; ?>">Edit</a>
@@ -137,7 +129,7 @@ include("config/connection.php");
 						<div class="pp" style="margin-left:0px;">
 							<center>
 								<?php
-								$query = "select count(id) from news_tb order by id desc";
+								$query = "select count(id) from news order by id desc";
 								$nume1 = mysqli_query($con, $query);
 								while ($row = mysqli_fetch_array($nume1)) {
 									$nume = $row[0];
@@ -193,8 +185,7 @@ include("config/connection.php");
 if (isset($_GET['del'])) {
 	$id = $_GET["del"];
 
-	$d = "delete from news_tb where id = '$id' ";
-
+	$d = "delete from news where id = '$id'";
 	$del = mysqli_query($con, $d);
 	if ($del) {
 		header("location:view_news.php?d=1");

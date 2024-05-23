@@ -2,6 +2,10 @@
 ob_start();
 session_start();
 include 'config/connection.php';
+if (isset($_SESSION["u"])) {
+    header("location: index.php");
+    exit();
+}
 
 ?>
 <!DOCTYPE html>

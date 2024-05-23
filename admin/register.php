@@ -39,7 +39,7 @@ include 'config/connection.php';
                         <div class="card-header bg-dark pb-0">
                             <div class="app-brand w-100 d-flex justify-content-center border-bottom-0">
                                 <a class="w-auto pl-0 " href="../index.php">
-                                    <img src="images/nlogo.png" width="100%">
+                                    <img src="../images/Mahayogi Guru Gorakhnath Govt/logo2.jpg" width="100%">
 
                                 </a>
                             </div>

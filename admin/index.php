@@ -1,7 +1,8 @@
 <?php
 ob_start();
 session_start();
-if(!$_SESSION['u']) {
+
+if(!isset($_SESSION['u'])) {
     header('location:login.php');
 }
 include('config/connection.php');

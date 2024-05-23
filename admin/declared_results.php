@@ -17,13 +17,10 @@ include("config/connection.php");
 					<h2 class="font-weight-bold text-center">
 						<font color="#146C94">&nbsp; View Results Details</font>
 					</h2>
-					<h6 class="fw-bold">InternshipTime</h6>
 				</div>
 
 				<div class="border border-top-3 border-danger">
 					<div class="panel grey lighten-5 border ">
-						<h6 class="font-weight-normal pt-1 pl-1">Info : View Teacher Details</h6>
-						<hr>
 						<div class="panel-body p-4">
 							<div class="table table-responsive">
 								<div class="table table-responsive">
@@ -32,6 +29,7 @@ include("config/connection.php");
 											<tr>
 												<th>#</th>
 												<th>Phone Number</th>
+                                                <th>Semester</th>
 												<th>Result</th>
 												<th>
 													<center>Action</center>
@@ -111,6 +109,7 @@ include("config/connection.php");
 										while ($row = mysqli_fetch_array($rs_result)) {
 											$id = $row['id'];
                                             $number = $row['st_phone_number'];
+                                            $semester = $row['semester'];
                                             $resultPath = $row['result_path'];
 										?>
 											<tbody>
@@ -119,6 +118,7 @@ include("config/connection.php");
 													<td><?php echo $j; ?></td>
 													<!-- <td><?php //echo $username; ?></td> -->
 													<td><?php echo $number; ?></td>
+													<td><?php echo $semester; ?></td>
                                                     <td><a href="<?php echo $resultPath?>" download>Download the result</a></td>
 													<td width="100">
 														<center>
@@ -184,8 +184,6 @@ include("config/connection.php");
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 
 </html>

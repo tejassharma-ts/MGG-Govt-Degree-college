@@ -8,8 +8,8 @@ include './config/connection.php';
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Escape user inputs for security
-    $admin_name= $_SESSION['u'] = mysqli_real_escape_string($con, $_POST['u']);
-    $password = $_SESSION['p'] = mysqli_real_escape_string($con, $_POST['p']);
+    $admin_name = mysqli_real_escape_string($con, $_POST['u']);
+    $password = mysqli_real_escape_string($con, $_POST['p']);
 
     // Fetch user data from the database
     $sql = "SELECT * FROM admins WHERE admin_name='$admin_name'";
@@ -20,6 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         // User found, verify password
         $row = mysqli_fetch_assoc($result);
         if(password_verify($password, $row['password'])) {
+            $_SESSION['u'] = $admin_name;
             header("Location: index.php?success=1");
             exit(); // Add an exit after header to stop further execution
         } else {

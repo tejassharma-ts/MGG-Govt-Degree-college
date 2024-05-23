@@ -5,7 +5,7 @@ error_reporting(0);
 if (!$_SESSION['u']) {
 	header('location:login.php');
 }
-include("config/connection.php");
+include "./config/connection.php"
 ?>
 
 <?php include_once("include1/sidenav.php"); ?>
@@ -18,7 +18,6 @@ include("config/connection.php");
 					<h2 class="font-weight-bold text-center">
 						<font color="#146C94">&nbsp; View Teacher Details</font>
 					</h2>
-					<h6 class="fw-bold">InternshipTime</h6>
 				</div>
 
 				<div class="border border-top-3 border-danger">
@@ -154,7 +153,7 @@ include("config/connection.php");
 									<div class="pp" style="margin-left:0px;">
 										<center>
 											<?php
-											$query = "select count(id) from teacher order by id desc";
+											$query = "select count(id) from faculty_members order by id desc";
 											$nume1 = mysqli_query($con, $query);
 											while ($row = mysqli_fetch_array($nume1)) {
 												$nume = $row[0];

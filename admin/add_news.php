@@ -1,55 +1,59 @@
 <?php
 ob_start();
 session_start();
-error_reporting(0);
-if(!$_SESSION['u']){
-	header('location:login.php');
-	}
-include("config/connection.php");
-?>
-<?php
+if(!$_SESSION['u']) {
+    header('location:login.php');
+}
+include "./config/connection.php";
+ini_set('display_errors', 1);
+
 if (isset($_POST['post'])) {
-    $jtitle = mysqli_real_escape_string($con, $_POST['jtitle']);
-    $jdesc = mysqli_real_escape_string($con, $_POST['jdesc']);
-    $date = date('Y-m-d');
-    // File upload handling
-    $img_name = $_FILES['img']['name'];
-    $img_tmp = $_FILES['img']['tmp_name'];
-    $img_size = $_FILES['img']['size'];
+    $title = mysqli_real_escape_string($con, $_POST['title']);
 
-    // Check file type
-    $allowed_extensions = array('jpg', 'jpeg', 'png', 'jfif');
-    $file_extension = strtolower(pathinfo($img_name, PATHINFO_EXTENSION));
+    $targetNewsDir = "upload/news/";
+    $fileName = uniqid() . '_' . basename($_FILES['pdf_file']['name']); // Generate a unique filename
+    $targetFilePathNews = $targetNewsDir. $fileName; // Final file path
 
-    if (!in_array($file_extension, $allowed_extensions)) {
-        echo "<script>alert('Error: Only JPG, JPEG, PNG, and JFIF file types are allowed.');</script>";
-        exit();
+
+    // Check file size (in bytes)
+    $maxFileSizeNews = 1 * 1024 * 1024;
+    if ($_FILES["pdf_file"]["size"] > $maxFileSizeNews) {
+        echo "<script>alert('Error: CV size exceeds 1 MB limit.');</script>";
+        // You can add additional JavaScript code or remove the exit() statement
+        // exit();
     }
 
-    // Check file size (1 MB limit)
-    $max_file_size = 1 * 1024 * 1024; // 1 MB in bytes
-
-    if ($img_size > $max_file_size) {
-        echo "<script>alert('Error: File size must be less than 1 MB.');</script>";
-        exit();
+    // Check if the CV was uploaded
+    $newsUploaded = !empty($_FILES["pdf_file"]["tmp_name"]);
+    if ($newsUploaded) {
+        $newsUploaded = move_uploaded_file($_FILES["pdf_file"]["tmp_name"], $targetFilePathNews);
     }
 
-    // Generate a unique filename
-    $unique_filename = time() . '_' . mt_rand(1000, 9999) . '_' . $img_name;
+    $newsPath = $newsUploaded ? $targetFilePathNews : null;
 
-    // Move uploaded image to a folder with the unique filename
-    move_uploaded_file($img_tmp, "upload/$unique_filename");
+    // Construct the SQL query with optional fields
+    $sql = "INSERT INTO `news`(`title`, `pdf_path`) VALUES ('$title', NULLIF('$newsPath', ''))";
 
-    // Insert data into the news table
-    $sql = "INSERT INTO `news_tb` (`title`, `description`, `img`, `date`) VALUES ('$jtitle', '$jdesc', '$unique_filename' ,'$date')";
+    // Perform the database operation within a try-catch block
+    try {
+        $run = mysqli_query($con, $sql);
 
-    $run = mysqli_query($con, $sql);
-    if ($run) {
-        echo "<script>alert('News added successfully.');</script>";
-        header("location:add_news.php?a=1");
-    } else {
-        echo "<script>alert('Error: Please fill in correct data.');</script>";
-   
+        if ($run) {
+            echo "<script>alert('News is successfully added.'); window.location.href='add_news.php?a=1';</script>";
+        } else {
+            echo "<script>alert('Error: Please fill in correct data.');</script>";
+        }
+    } catch (mysqli_sql_exception $e) {
+        echo "Exception has occured";
+        exit();
+        // Check if the error code indicates a duplicate entry
+        if ($e->getCode() == 1062) { // MySQL error code for duplicate entry
+            echo "<script>alert('Error: Duplicate email. Please enter a unique email.');</script>";
+            exit();
+        } else {
+            echo "<script>alert('Error: " . $e->getMessage() . "');</script>";
+            exit();
+        }
     }
 }
 ?>
@@ -78,7 +82,6 @@ if (isset($_POST['post'])) {
                             <h2 class="font-weight-bold text-center">
                                 <font color="#146C94">&nbsp; Add News</font>
                             </h2>
-                            <h6 class="fw-bold">InternshipTime</h6>
                         </div>
                         </div>
                     </div>
@@ -94,33 +97,19 @@ if (isset($_POST['post'])) {
                                     <form action="" method="post" enctype="multipart/form-data" autocomplete="off" class="row">
                                         <div class="col-lg-6">
                                             <div class="form-group ">
-                                                <label>News Title<span class="color">*</span></label>
-                                                <input class="form-control tt" type="text" name="jtitle"
+                                                <label for="title">News Title<span class="color">*</span></label>
+                                                <input class="form-control tt" type="text" name="title"
                                                     placeholder="Enter Job Title" required="required" />
                                             </div>
                                             <!--form-group-->
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <label>Add Image<span class="color">* (accept: .jpeg,.jpg,.png,.jfif
-                                                        only) less than 1 MB</span></label>
-                                                <input class=" tt" type="file" name="img"
-                                                    accept=".jpg, .jpeg, .jfif, .png" required="required" />
+                                              <label for="pdf_file">News pdf:</label>
+                                              <input type="file" id="pdf_file" name="pdf_file" accept="application/pdf"/>
                                             </div>
                                             <!--form-group-->
                                         </div>
-
-
-                                        <div class="col-md-12">
-                                            <div class="form-group ">
-                                                <label>News Description<span class="color">*</span></label>
-
-                                                <textarea class="form-control tt" type="text"  name="jdesc"
-                                                    placeholder="Enter Decription"></textarea>
-                                            </div>
-
-                                        </div>
-                                        <!--form-group-->
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="col-lg-12 reg-btn mb-4">
@@ -146,70 +135,17 @@ if (isset($_POST['post'])) {
 </div>
 <?php include_once("include1/footer.php"); ?>
 
-
-<<script>
-    // Replace the <textarea id="editor1"> with a CKEditor 4
-    // instance, using default configuration.
-    CKEDITOR.replace('editor');
-    </script>
-
-    <script>
-    function noalpha1() {
-        var w = document.getElementById("mob1").value;
-        var phoneno1 = /^[1-9]{1}[0-9]{9}$/;
-        if (phoneno1.test(w)) {
-            document.getElementById("alert1").innerHTML = "";
-            return;
-        } else {
-            document.getElementById("alert1").innerHTML = "Please enter valid mobile number.";
-            document.getElementById("alert1").style.color = "red";
-            return;
-        }
-    }
-    </script>
-    <script>
-    function emailchk() {
-        var email = document.getElementById("email").value;
-        if (((/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(email)) == 1) || email == "") {
-            document.getElementById("alert").innerHTML = "";
-            return (true);
-        } else if ((/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(email)) == 0) {
-            document.getElementById("alert").innerHTML = "You have entered an invalid email address!";
-            document.getElementById("alert").style.color = "red";
-            return (false);
-        }
-    }
-    </script>
-    <script>
-    CKEDITOR.replace('editor');
-    $("form").submit(function(e) {
-        var totalcontentlength = CKEDITOR.instances['editor'].getData().replace(/<[^>]*>/gi, '').length;
-        if (!totalcontentlength) {
-            document.getElementById("box1").innerHTML = "This box can't be left empty";
-            document.getElementById("box1").style.color = "red";
-            e.preventDefault();
-        } else {
-            document.getElementById("box1").innerHTML = "";
-        }
-    });
-    </script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
 <?php
- if(isset($_GET['a'])){
- if($_GET['a']==1)
- {
- ?>
+ if(isset($_GET['a'])) {
+     if($_GET['a'] == 1) {
+         ?>
 <script>
 alert("News is successfully added..");
 </script>
 <?php
+     }
  }
- }
- ?>
+?>
 <?php
- ob_flush();
- ?>
+ob_flush();
+?>

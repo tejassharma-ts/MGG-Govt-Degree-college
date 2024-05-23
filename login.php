@@ -1,6 +1,14 @@
 <?php
-ini_set('display_errors', 1);
+session_start(); // Start or resume the session
+
+include("./config/connection.php");
+
+if (isset($_SESSION['phone_number'])) {
+    header('location:main.php'); // Redirect to login if the session is not set
+    exit();
+}
 ?>
+
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -81,7 +89,7 @@ ini_set('display_errors', 1);
 
 <?php
 ini_set('display_errors', 1);
-include "./db/connection.php";
+include "./admin/config/connection.php";
 // Check if the form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone_number = mysqli_real_escape_string($con, $_POST['phone_number']);
@@ -108,8 +116,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Verify the password
         if (password_verify($password, $hashed_password)) {
-            // Password is correct, start a session or handle login success
-            header("Location: main.php");
+            $_SESSION['phone_number'] = $phone_number;
+            header("location:main.php");
+            exit();
         } else {
             // Password is incorrect
             echo "<script>alert('Credentials are not valid');</script>";

@@ -113,7 +113,8 @@ include "./admin/config/connection.php"
                                 <img style="aspect-ratio: 2/2; object-fit: cover;" src="<?php echo $photoSrc ?>"
                                 class="card-img-top mb-0 custom-card-img" alt="...">
                                 <div class="card-body p-1">
-                                    <h3 class="card-text"><b><?php echo $name?></b></h3>
+                                    <h3 class="card-text text-center"><b><?php echo $name?></b></h3>
+                                    <p class="card-text text-center"><b><?php echo $position?></b></p>
                                 </div>
                             </div>
                             <?php

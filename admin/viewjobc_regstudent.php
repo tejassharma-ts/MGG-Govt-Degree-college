@@ -65,7 +65,6 @@ if (isset($_POST['post'])) {
                             <h2 class="font-weight-bold text-center">
                                 <font color="#146C94">&nbsp; Add Student</font>
                             </h2>
-                            <h6 class="fw-bold">InternshipTime</h6>
                         </div>
                     </div>
                 </div>

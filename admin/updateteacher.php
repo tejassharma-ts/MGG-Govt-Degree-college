@@ -83,7 +83,6 @@ if (isset($_GET['id'])) {
 					        <h2 class="font-weight-bold text-center">
 						        <font color="#146C94">&nbsp;Update Teacher Details</font>
 					        </h2>
-					        <h6 class="fw-bold">InternshipTime</h6>
 				        </div>
                     </div>
                 </div>

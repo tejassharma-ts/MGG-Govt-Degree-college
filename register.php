@@ -1,6 +1,14 @@
 <?php
-ini_set('display_errors', 1);
+session_start(); // Start or resume the session
+
+include("./admin/config/connection.php");
+
+if (isset($_SESSION['phone_number'])) {
+    header('location:main.php'); // Redirect to login if the session is not set
+    exit();
+}
 ?>
+
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -83,7 +91,6 @@ ini_set('display_errors', 1);
 </html>
 
 <?php
-include "./db/connection.php";
 ini_set('display_errors', 1);
 // Check if the form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST") {
