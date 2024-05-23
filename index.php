@@ -1,3 +1,6 @@
+<?php 
+include "./admin/config/connection.php"
+?>
 <!DOCTYPE html>
 
 
@@ -185,30 +188,52 @@
                                     </path>
                                 </svg> &nbsp;LATEST NEWS</h2>
                             <div class="card-body">
-                                <marquee direction="up" scrollamount="5" onmouseover="this.stop();"
-                                    onmouseout="this.start();" ;="" style="height: 371px;">
-                                    <ul class="margin-t-b">
-                                        <li> <img class="padding-none border-none yy"
-                                                src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11"
-                                                width="26"><a href="" class="a-tag">Reminder Circular No. 436 (Submission of
-                                            Annual Performance Appraisal Report) - reg.</a> </li>
-                                        <li> <img class="padding-none border-none yy"
-                                                src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11"
-                                                width="26"><a href="" class="a-tag">Publishing Incorrect Map of India is
-                                            Punishable - regarding</a></li>
-                                        <li>
-                                            <img class="padding-none border-none yy"
-                                                src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11"
-                                                width="26"><a href="" class="a-tag">Notification for P.G. Entrance Exam 2024-25 Reg.</a>
-                                        </li>
-                                        <li> <img class="padding-none border-none yy"
-                                                src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11"
-                                                width="26"><a href="" class="a-tag">Office
-                                            Order No. 147 (Committee Constitute for 'Institution's Innovation
-                                            Council)-reg.</a></li>
+                                    <marquee direction="up" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();" style="height: 371px;">
+                                        <ul class="margin-t-b">
+                                            <?php
+                                            $sql = "SELECT title, pdf_path FROM news";
+                                            $result = $con->query($sql);
 
-                                    </ul>
-                                </marquee>
+                                            if ($result->num_rows > 0) {
+                                            while ($row = $result->fetch_assoc()) {
+                                            $title = htmlspecialchars($row["title"]);
+                                            $pdf_path = './admin/' . $row["pdf_path"];
+                                            echo '<li>';
+                                            echo '<img class="padding-none border-none yy" src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11" width="26">';
+                                            echo '<a href="' . htmlspecialchars($pdf_path) . '" class="a-tag">' . $title . '</a>';
+                                            echo '</li>';
+                                            }
+                                            } else {
+                                            echo "No news available.";
+                                            }
+
+                                            ?>
+                                        </ul>
+                                    </marquee>
+                                <!-- <marquee direction="up" scrollamount="5" onmouseover="this.stop();" -->
+                                <!--     onmouseout="this.start();" ;="" style="height: 371px;"> -->
+                                <!--     <ul class="margin-t-b"> -->
+                                <!--         <li> <img class="padding-none border-none yy" -->
+                                <!--                 src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11" -->
+                                <!--                 width="26"><a href="" class="a-tag">Reminder Circular No. 436 (Submission of -->
+                                <!--             Annual Performance Appraisal Report) - reg.</a> </li> -->
+                                <!--         <li> <img class="padding-none border-none yy" -->
+                                <!--                 src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11" -->
+                                <!--                 width="26"><a href="" class="a-tag">Publishing Incorrect Map of India is -->
+                                <!--             Punishable - regarding</a></li> -->
+                                <!--         <li> -->
+                                <!--             <img class="padding-none border-none yy" -->
+                                <!--                 src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11" -->
+                                <!--                 width="26"><a href="" class="a-tag">Notification for P.G. Entrance Exam 2024-25 Reg.</a> -->
+                                <!--         </li> -->
+                                <!--         <li> <img class="padding-none border-none yy" -->
+                                <!--                 src="https://doonuniversity.ac.in/asset/images/new1.gif" height="11" -->
+                                <!--                 width="26"><a href="" class="a-tag">Office -->
+                                <!--             Order No. 147 (Committee Constitute for 'Institution's Innovation -->
+                                <!--             Council)-reg.</a></li> -->
+                                <!---->
+                                <!--     </ul> -->
+                                <!-- </marquee> -->
                                 <a href="" class="text-danger">see more ..</a>
                             </div>
                         </div>

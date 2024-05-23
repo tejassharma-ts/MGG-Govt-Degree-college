@@ -1,7 +1,7 @@
 <?php
 
 // display the fatals errors
-ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
 // Connection details
 $server = "localhost";
 $username = "root";

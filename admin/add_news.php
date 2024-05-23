@@ -5,7 +5,7 @@ if(!$_SESSION['u']) {
     header('location:login.php');
 }
 include "./config/connection.php";
-ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
 
 if (isset($_POST['post'])) {
     $title = mysqli_real_escape_string($con, $_POST['title']);
